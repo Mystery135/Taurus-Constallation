@@ -1,0 +1,30 @@
+*{
+    font-family: sans-serif;
+    color: white;
+}
+
+
+.star{
+position: absolute;
+background-color: white;
+border-radius: 50%;
+}
+
+.star:hover{
+    display: none;
+}
+
+body{
+    background-color: black;
+}
+#tianguan{
+    left: 50%;
+    height: 50px;
+    width: 50px;
+}
+#ain{
+    left: 50%;
+    height: 50px;
+    width: 50px;
+  
+}
