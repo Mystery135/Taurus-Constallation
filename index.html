@@ -4,93 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarus Constallation</title>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+    <div class="constellation-diagram">
+
+
+
+        <div id="ain-container" class="star-container">
+            <span id = "ain" class="star"></span>
+            <span class="tag">ε Tauri</span>
+        </div>
+        <!-- MAKE INTO CATALOG NAME -->
+    
+        <div id="aldebaran-container" class="star-container">
+            <span id = "aldebaran" class="star"></span>
+            <span class="tag">α Tauri</span>
+        </div>
+    
+        <div id="chamukuy-container" class="star-container">
+            <span id = "chamukuy" class="star"></span>
+            <span class="tag">θ Tauri</span>
+        </div>
+    
+
+            <div id="elnath-container" class="star-container">
+                <button onclick="showStarInfo()" class="star-button">
+                <span id = "elnath" class="star">
+                <span class="tag">β Tauri</span>
+                </button>
+                    
+                <div id="elnath-info" class="star-info">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, porro!</p>
+                </div>
+
+
+
+
+            </div>
+        
+
+  
+    
+        <div id="four-tauri-container" class="star-container">
+            <span id = "four-tauri" class="star">
+            <span class="tag">4-Tauri</span>
+        </div>
+    
+        <div id="lambda-tauri-container" class="star-container">
+            <span id = "lambda-tauri" class="star">
+            <span class="tag">λ Tauri</span>
+        </div>
+    
+    
+        <div id="mu-tauri-container" class="star-container">
+            <span id = "mu-tauri" class="star"></span>
+            <span class="tag">μ Tauri</span>
+        </div>
+    
+        <div id="nu-tauri-container" class="star-container">
+            <span id = "nu-tauri" class="star"></span>
+            <span class="tag">Nu-Tauri</span>
+        </div>
+    
+        <div id="omicron-tauri-container" class="star-container">
+            <span id = "omicron-tauri" class="star"></span>
+            <span class="tag">Omicron Tauri</span>
+        </div>
+    
+        <div id="prima-hyadum-container" class="star-container">
+            <span id = "prima-hyadum" class="star"></span>
+            <span class="tag">γ Tauri</span>
+        </div>
+    
+        <div id="secunda-hyadum-container" class="star-container">
+            <span id = "secunda-hyadum" class="star"></span>
+            <span class="tag">Secunda Hyadum</span>
+        </div>
+    
+        <div class="star-container" id="tau-tauri-container">
+            <span id = "tau-tauri" class="star"></span>
+            <span class="tag">τ Tauri</span>
+        </div>
+    
+        <div id="tianguan-container" class="star-container">
+            <span id = "tianguan" class="star"></span>
+            <span class="tag">ζ Tauri</span>
+        </div>
+    
+        <div id="xi-tauri-container" class="star-container">
+            <span id = "xi-tauri" class="star"></span>
+            <span class="tag">ξ Tauri</span>
+        </div>
+    
+    
+        <!-- <div id="zeta-to-alpha", class="constallation-line"> -->
+            
+    
+    
+        </div>
+    
+    
+    
+    </div>
+
     <main>
 
         <header>
             <h1 id = "title">Taurus Constallation</h1>
         </header>
-<div class="constellation-diagram">
-    <div id="ain-container" class="star-container">
-        <span id = "ain" class="star"></span>
-        <span class="tag">ε Tauri</span>
-    </div>
-    <!-- MAKE INTO CATALOG NAME -->
 
-    <div id="aldebaran-container" class="star-container">
-        <span id = "aldebaran" class="star"></span>
-        <span class="tag">α Tauri</span>
-    </div>
-
-    <div id="chamukuy-container" class="star-container">
-        <span id = "chamukuy" class="star"></span>
-        <span class="tag">θ Tauri</span>
-    </div>
-
-
-    <div id="elnath-container" class="star-container">
-        <span id = "elnath" class="star">
-        <span class="tag">β Tauri</span>
-    </div>
-
-    <div id="four-tauri-container" class="star-container">
-        <span id = "four-tauri" class="star">
-        <span class="tag">4-Tauri</span>
-    </div>
-
-    <div id="lambda-tauri-container" class="star-container">
-        <span id = "lambda-tauri" class="star">
-        <span class="tag">λ Tauri</span>
-    </div>
-
-
-    <div id="mu-tauri-container" class="star-container">
-        <span id = "mu-tauri" class="star"></span>
-        <span class="tag">μ Tauri</span>
-    </div>
-
-    <div id="nu-tauri-container" class="star-container">
-        <span id = "nu-tauri" class="star"></span>
-        <span class="tag">Nu-Tauri</span>
-    </div>
-
-    <div id="omicron-tauri-container" class="star-container">
-        <span id = "omicron-tauri" class="star"></span>
-        <span class="tag">Omicron Tauri</span>
-    </div>
-
-    <div id="prima-hyadum-container" class="star-container">
-        <span id = "prima-hyadum" class="star"></span>
-        <span class="tag">γ Tauri</span>
-    </div>
-
-    <div id="secunda-hyadum-container" class="star-container">
-        <span id = "secunda-hyadum" class="star"></span>
-        <span class="tag">Secunda Hyadum</span>
-    </div>
-
-    <div class="star-container" id="tau-tauri-container">
-        <span id = "tau-tauri" class="star"></span>
-        <span class="tag">τ Tauri</span>
-    </div>
-
-    <div id="tianguan-container" class="star-container">
-        <span id = "tianguan" class="star"></span>
-        <span class="tag">ζ Tauri</span>
-    </div>
-
-    <div id="xi-tauri-container" class="star-container">
-        <span id = "xi-tauri" class="star"></span>
-        <span class="tag">ξ Tauri</span>
-    </div>
-
-
-</div>
         
 
-    </main>
+
 
     <!-- Add absolute mag? and luminosity -->
 
@@ -161,8 +190,88 @@
         </tr>
       </table> 
 
+      <p>Unit explanation</p>
+      <ul>
+        <li>R<sub>☉</sub> = Radius in terms of the sun's radius (2R<sub>☉</sub> = 2x the sun's radius)</li>
+
+      </ul>
+
+
+      <h2 style="margin-top: 100px;" class="subtitle">When can Taurus be seen?</h2>
+      <p>Taurus can be seen in the nothern hemisphere between Fall and Spring, and can be seen in the sourthern hemisphere between Spring and Fall.
+      </p>
 
 
 
+<h2 style="margin-top: 100px;" class="subtitle">Story</h2>
+<p>
+In Greek mythology, Tarus is often associated with Zeus. It is said that once upon a time, Zeus grew attracted to Europa, a Phoenician princess, and the daughter of King Agenor of Phoenicia and Telephassa. Because of this, Zeus appeared in front of her as an attractive white bull. Europa eventually fell for bull (Zeus) and climed on its back. Zeus then took Europa to the beach and jumped in the water. Finally, Zeus took Europa to Crete. There, Zeus took the form of an eagle and had 3 sons with Europa.
+</p>
+
+<h2 style="margin-top: 100px;" class="subtitle">Interesting facts</h2>
+<ul>
+
+    <li>Some of the also have traditional names. For exmaple:
+        <ul>
+            <li>α Tauri is traditionally called Aldebaran</li>
+            <li>
+                β Tauri is traditionally called Elnath
+            </li>
+            <li>
+                γ Tauri is 
+                traditionally called prima-hyadum
+            </li>
+            <li>
+                The Tarus constallation has some of the the brightest stars out of any constallation.
+                For example, Aldebaran, Alcyon, and Elnat are all in the Taurus constallation.
+            </li>
+
+        </ul>
+
+
+
+    </li>
+</ul>
+
+
+<h2 style="margin-top: 100px;" class="subtitle">Sources Used</h2>
+<div class="csl-bib-body" style="line-height: 2; margin-left: 2em; text-indent:-2em;">
+    <div class="csl-entry">admin. (2019a, October 8). <i>Aldebaran (Alpha Tauri): Star Type, Size, Planet, Constellation | Star Facts</i>. <a href="https://www.star-facts.com/aldebaran/">https://www.star-facts.com/aldebaran/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Aldebaran%20(Alpha%20Tauri)%3A%20Star%20Type%2C%20Size%2C%20Planet%2C%20Constellation%20%7C%20Star%20Facts&amp;rft.description=Aldebaran%2C%20Alpha%20Tauri%20(%CE%B1%20Tau)%2C%20is%20an%20orange%20giant%20star%20located%20at%20a%20distance%20of%2065.3%20ly%20from%20Earth%20in%20the%20constellation%20Taurus.%20It%20marks%20the%20eye%20of%20the%20Bull.&amp;rft.identifier=https%3A%2F%2Fwww.star-facts.com%2Faldebaran%2F&amp;rft.au=undefined&amp;rft.date=2019-10-08&amp;rft.language=en-US"></span>
+    <div class="csl-entry">admin. (2019b, November 8). <i>Elnath (Beta Tauri): Star Type, Name, Location, Constellation | Star Facts</i>. <a href="https://www.star-facts.com/elnath/">https://www.star-facts.com/elnath/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Elnath%20(Beta%20Tauri)%3A%20Star%20Type%2C%20Name%2C%20Location%2C%20Constellation%20%7C%20Star%20Facts&amp;rft.description=Elnath%2C%20Beta%20Tauri%20(%CE%B2%20Tau)%2C%20is%20a%20blue-white%20giant%20star%20located%20at%20a%20distance%20of%20134%20ly%20from%20Earth%20in%20the%20constellation%20Taurus.%20It%20was%20once%20also%20known%20as%20Gamma%20Aurigae.&amp;rft.identifier=https%3A%2F%2Fwww.star-facts.com%2Felnath%2F&amp;rft.au=undefined&amp;rft.date=2019-11-08&amp;rft.language=en-US"></span>
+    <div class="csl-entry">admin. (2023, December 31). <i>Tianguan (Zeta Tauri): Star System, Facts, Name, Location | Star Facts</i>. <a href="https://www.star-facts.com/tianguan-zeta-tauri/">https://www.star-facts.com/tianguan-zeta-tauri/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=blogPost&amp;rft.title=Tianguan%20(Zeta%20Tauri)%3A%20Star%20System%2C%20Facts%2C%20Name%2C%20Location%20%7C%20Star%20Facts&amp;rft.description=Tianguan%20(%CE%B6%20Tauri)%20is%20a%20hot%20blue%20giant%20star%20located%20440%20light-years%20away%20in%20the%20constellation%20Taurus.%20It%20marks%20the%20southern%20horn%20of%20the%20Bull%20and%20appears%20near%20the%20famous%20Crab%20Nebula%20(M1)%20in%20the%20sky.&amp;rft.identifier=https%3A%2F%2Fwww.star-facts.com%2Ftianguan-zeta-tauri%2F&amp;rft.au=undefined&amp;rft.date=2023-12-31&amp;rft.language=en-US"></span>
+    <div class="csl-entry"><i>Ain—ε Tauri (epsilon Tauri)—Star in Taurus | TheSkyLive.com</i>. (n.d.). Retrieved January 9, 2024, from <a href="https://theskylive.com/sky/stars/ain-epsilon-tauri-star">https://theskylive.com/sky/stars/ain-epsilon-tauri-star</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Ain%20-%20%CE%B5%20Tauri%20(epsilon%20Tauri)%20-%20Star%20in%20Taurus%20%7C%20TheSkyLive.com&amp;rft.description=Ain%2C%20also%20designated%20as%20%CE%B5%20Tauri%2C%20is%20a%20double%20giant%20star%20of%20magnitude%203.53%20in%20the%20constellation%20of%20Taurus.%20Find%20complete%20information%20about%20Ain%20on%20TheSkyLive.com.&amp;rft.identifier=https%3A%2F%2Ftheskylive.com%2Fsky%2Fstars%2Fain-epsilon-tauri-star"></span>
+    <div class="csl-entry"><i>Aldebaran—Alpha Tauri – Constellation Guide</i>. (n.d.-a). Retrieved January 9, 2024, from <a href="https://www.constellation-guide.com/aldebaran/">https://www.constellation-guide.com/aldebaran/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Aldebaran%20-%20Alpha%20Tauri%20%E2%80%93%20Constellation%20Guide&amp;rft.identifier=https%3A%2F%2Fwww.constellation-guide.com%2Faldebaran%2F"></span>
+    <div class="csl-entry"><i>Aldebaran—Alpha Tauri – Constellation Guide</i>. (n.d.-b). Retrieved January 9, 2024, from <a href="https://www.constellation-guide.com/aldebaran/">https://www.constellation-guide.com/aldebaran/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Aldebaran%20-%20Alpha%20Tauri%20%E2%80%93%20Constellation%20Guide&amp;rft.identifier=https%3A%2F%2Fwww.constellation-guide.com%2Faldebaran%2F"></span>
+    <div class="csl-entry">Guide, U. (2015, January 25). <i>Chamukuy (Theta 2 Tauri) Star Distance, Colour, Size (Radius) and other Facts—Universe Guide</i>. <a href="https://www.universeguide.com/star/20894/theta2tauri">https://www.universeguide.com/star/20894/theta2tauri</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Chamukuy%20(Theta%202%20Tauri)%20Star%20Distance%2C%20Colour%2C%20Size%20(Radius)%20and%20other%20Facts%20-%20Universe%20Guide&amp;rft.description=Chamukuy%20(Theta%202%20Tauri)%20is%20a%20blue%20giant%20star%20in%20the%20constellation%20of%20Taurus.%20It%20can%20be%20seen%20in%20the%20night%20sky.&amp;rft.identifier=https%3A%2F%2Fwww.universeguide.com%2Fstar%2F20894%2Ftheta2tauri&amp;rft.aufirst=Universe&amp;rft.aulast=Guide&amp;rft.au=Universe%20Guide&amp;rft.date=2015-01-25&amp;rft.language=en-us"></span>
+    <div class="csl-entry"><i>Taurus</i>. (n.d.). Retrieved January 10, 2024, from <a href="http://judy-volker.com/StarLore/Astronomy/Taurus.html">http://judy-volker.com/StarLore/Astronomy/Taurus.html</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Taurus&amp;rft.identifier=http%3A%2F%2Fjudy-volker.com%2FStarLore%2FAstronomy%2FTaurus.html"></span>
+    <div class="csl-entry"><i>Taurus Constellation: Stars, Myth, Location, Facts... – Constellation Guide</i>. (n.d.-a). Retrieved January 9, 2024, from <a href="https://www.constellation-guide.com/constellation-list/taurus-constellation/">https://www.constellation-guide.com/constellation-list/taurus-constellation/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Taurus%20Constellation%3A%20Stars%2C%20Myth%2C%20Location%2C%20Facts...%20%E2%80%93%20Constellation%20Guide&amp;rft.identifier=https%3A%2F%2Fwww.constellation-guide.com%2Fconstellation-list%2Ftaurus-constellation%2F"></span>
+    <div class="csl-entry"><i>Taurus Constellation: Stars, Myth, Location, Facts... – Constellation Guide</i>. (n.d.-b). Retrieved January 10, 2024, from <a href="https://www.constellation-guide.com/constellation-list/taurus-constellation/">https://www.constellation-guide.com/constellation-list/taurus-constellation/</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Taurus%20Constellation%3A%20Stars%2C%20Myth%2C%20Location%2C%20Facts...%20%E2%80%93%20Constellation%20Guide&amp;rft.identifier=https%3A%2F%2Fwww.constellation-guide.com%2Fconstellation-list%2Ftaurus-constellation%2F"></span>
+    <div class="csl-entry"><i>Taurus Zodiac Sign—Character traits</i>. (n.d.). Retrieved January 10, 2024, from <a href="https://www.greekmythology.com/Myths/Zodiac/Taurus/taurus.html">https://www.greekmythology.com/Myths/Zodiac/Taurus/taurus.html</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Taurus%20Zodiac%20Sign%20-%20Character%20traits&amp;rft.description=Taurus%2C%20the%20Bull%2C%20is%20the%20second%20sign%20in%20the%20Zodiac%20and%20represents%20those%20born%20between%20April%2020%20and%20May%2020.Taurus%2C%20comes%20from%20the%20story%20of%20Europa.%20She...&amp;rft.identifier=https%3A%2F%2Fwww.greekmythology.com%2FMyths%2FZodiac%2FTaurus%2Ftaurus.html&amp;rft.language=en"></span>
+    <div class="csl-entry"><i>The Taurus Myth—The Complete Story</i>. (n.d.). Retrieved January 10, 2024, from <a href="https://www.gods-and-monsters.com/taurus-myth.html">https://www.gods-and-monsters.com/taurus-myth.html</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=The%20Taurus%20Myth%20-%20The%20Complete%20Story&amp;rft.description=A%20new%20Taurus%20Myth%20was%20uncovered%20when%20the%20Scriptures%20of%20Delphi%20were%20discovered.%20%20Our%20mythologist%20interprets%20this%20rare%20legend.&amp;rft.identifier=https%3A%2F%2Fwww.gods-and-monsters.com%2Ftaurus-myth.html"></span>
+    <div class="csl-entry">updated, R. L. last. (2018, November 8). <i>Taurus Constellation: Facts About the Bull</i>. Space.Com. <a href="https://www.space.com/17101-taurus-constellation.html">https://www.space.com/17101-taurus-constellation.html</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Taurus%20Constellation%3A%20Facts%20About%20the%20Bull&amp;rft.description=The%20bull%20is%20hard%20to%20miss%20as%20it%20charges%20through%20the%20northern%20winter%20sky.&amp;rft.identifier=https%3A%2F%2Fwww.space.com%2F17101-taurus-constellation.html&amp;rft.aufirst=Robert%20Lea%20last&amp;rft.aulast=updated&amp;rft.au=Robert%20Lea%20last%20updated&amp;rft.date=2018-11-08&amp;rft.language=en"></span>
+    <div class="csl-entry"><i>Wikiwand—Gamma Tauri</i>. (n.d.). Wikiwand. Retrieved January 10, 2024, from <a href="https://www.wikiwand.com/en/Gamma_Tauri">https://www.wikiwand.com/en/Gamma_Tauri</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=Wikiwand%20-%20Gamma%20Tauri&amp;rft.description=Gamma%20Tauri%20is%20either%20a%20solitary%2C%20binary%20or%20double%20star%20that%20marks%20the%20tip%20of%20the%20%22V%22%20in%20the%20constellation%20of%20Taurus.%20It%20is%20a%20member%20of%2C%20and%20located%20within%20about%202.5%20parsecs%20of%20the%20center%20of%2C%20the%20Hyades%20star%20cluster%2C%20the%20nearest%20open%20cluster%20to%20the%20Sun.%20Based%20upon%20parallax%20measurements%2C%20Gamma%20Tauri%20is%20approximately%20154%20light-years%20from%20the%20Sun.&amp;rft.identifier=https%3A%2F%2Fwww.wikiwand.com%2Fen%2FGamma_Tauri"></span>
+    <div class="csl-entry"><i>μ Tauri (mu Tauri)—Star in Taurus | TheSkyLive.com</i>. (n.d.). Retrieved January 10, 2024, from <a href="https://theskylive.com/sky/stars/mu-tauri-star">https://theskylive.com/sky/stars/mu-tauri-star</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=%CE%BC%20Tauri%20(mu%20Tauri)%20-%20Star%20in%20Taurus%20%7C%20TheSkyLive.com&amp;rft.description=%CE%BC%20Tauri%20is%20a%20star%20of%20magnitude%204.29%20in%20the%20constellation%20of%20Taurus.%20Find%20complete%20information%20about%20%CE%BC%20Tauri%20on%20TheSkyLive.com.&amp;rft.identifier=https%3A%2F%2Ftheskylive.com%2Fsky%2Fstars%2Fmu-tauri-star"></span>
+    <div class="csl-entry"><i>ξ Tauri (xi Tauri)—Star in Taurus | TheSkyLive.com</i>. (n.d.). Retrieved January 10, 2024, from <a href="https://theskylive.com/sky/stars/xi-tauri-star">https://theskylive.com/sky/stars/xi-tauri-star</a></div>
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=%CE%BE%20Tauri%20(xi%20Tauri)%20-%20Star%20in%20Taurus%20%7C%20TheSkyLive.com&amp;rft.description=%CE%BE%20Tauri%20is%20a%20star%20of%20magnitude%203.74%20in%20the%20constellation%20of%20Taurus.%20Find%20complete%20information%20about%20%CE%BE%20Tauri%20on%20TheSkyLive.com.&amp;rft.identifier=https%3A%2F%2Ftheskylive.com%2Fsky%2Fstars%2Fxi-tauri-star"></span>
+  </div>
+
+
+
+</main>
 </body>
 </html>
