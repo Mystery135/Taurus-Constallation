@@ -175,7 +175,35 @@ main {
     /* display: none; */
     /* UNDO L8TR */
 }
-
+.toptag{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -400%);
+    bottom: -40px;
+    white-space: nowrap;
+    overflow: hidden; /* or 'auto' to add a scrollbar */
+    text-overflow: ellipsis; /* optional, to indicate text is clipped */
+    /* display: none; */
+    /* UNDO L8TR */
+}
+.righttag{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    white-space: nowrap;
+    overflow: hidden; /* or 'auto' to add a scrollbar */
+    text-overflow: ellipsis; /* optional, to indicate text is clipped */
+    /* display: none; */
+    /* UNDO L8TR */
+}
+/* 
 #aldebaran-container .tag{
     left: 0%;
     transform: translate(-120%, -100%)
@@ -190,15 +218,17 @@ main {
 }
 #chamukuy-container .tag{
     left: 0%;
-    transform: translate(-100%, -60%)
+    transform: translate(-50%, -50%)
 }
 #prima-hyadum-container .tag{
     left: 0%;
     transform: translate(40%, -20%)
-}
+} */
 
 .constellation-diagram{
-    height: 75%;
+    position: relative;
+    display: block;
+    height: 55%;
 }
 main{
     height: 100vh;
@@ -242,7 +272,7 @@ table {
  }
 
 
- #zeta-to-alpha{
+ /* #zeta-to-alpha{
     width: 10px;
     height: 100px;
     background-color: aqua;
@@ -250,7 +280,7 @@ table {
     top: 30%;
     transform: rotate(110deg);
     
- }
+ } */
  .constallation-line{
     position: absolute;
  }
@@ -266,4 +296,8 @@ background:none;
 }
 .star-button:hover{
     cursor: pointer;
+}
+
+.line{
+    position: absolute;
 }
