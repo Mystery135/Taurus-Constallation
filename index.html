@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taurus Constallation</title>
     <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7b8e9b8c69.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,21 @@
             <line x1="15.2%" y1="23.2%" x2="40%" y2="38%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
           </svg>
 
+        <svg style="position: absolute" class="line" id="tau-to-ain" height="100%" width="100%">
+            <line x1="40%" y1="38%" x2="48.7%" y2="46.2%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+        <svg style="position: absolute" class="line" id="ain-to-theta" height="100%" width="100%">
+            <line x1="48.7%" y1="46.2%" x2="53%" y2="50.4%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+        <svg style="position: absolute" class="line" id="theta-to-gamma" height="100%" width="100%">
+            <line x1="53%" y1="50.4%" x2="55%" y2="54.7%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+
+
+
+
+
+
         <svg style="position: absolute" class="line" id="zeta-to-alpha" height="100%" width="100%">
             <line x1="9%" y1="42.5%" x2="45%" y2="53.5%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
           </svg>
@@ -43,9 +59,29 @@
             <line x1="50%" y1="54.5%" x2="56%" y2="55%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
           </svg>
         <svg style="position: absolute" class="line" id="gamma-to-lambda" height="100%" width="100%">
-            <line x1="56%" y1="55%" x2="67%" y2="55%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+            <line x1="56%" y1="55%" x2="67%" y2="61.3%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
           </svg>
 
+
+
+        <svg style="position: absolute" class="line" id="lambda-to-mu" height="100%" width="100%">
+            <line x1="67%" y1="61.3%" x2="58.7%" y2="72%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+        <svg style="position: absolute" class="line" id="lambda-to-nu" height="100%" width="100%">
+            <line x1="58.7%" y1="72%" x2="66.7%" y2="78.3%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+
+
+
+          <svg style="position: absolute" class="line" id="lambda-to-four" height="100%" width="100%">
+            <line x1="67%" y1="61.3%" x2="85%" y2="58.5%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+          <svg style="position: absolute" class="line" id="fourt-to-xi" height="100%" width="100%">
+            <line x1="85%" y1="58.5%" x2="88.3%" y2="66.5%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
+          <svg style="position: absolute" class="line" id="xi-to-omicron" height="100%" width="100%">
+            <line x1="88.3%" y1="66.5%" x2="90.3%" y2="68.2%" style="stroke:rgb(255, 255, 255);stroke-width:2" />
+          </svg>
 
 
         <div id="ain-container" class="star-container">
@@ -70,23 +106,13 @@
                 <span id = "elnath" class="star">
                 <span class="tag">β Tauri</span>
                 </button>
-                    
-
-                <!-- TODO: Implemwnt -->
-                <!-- <div id="elnath-info" class="star-info">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, porro!</p>
-                </div> -->
-
-
-
-
             </div>
         
 
     
         <div id="four-tauri-container" class="star-container">
             <span id = "four-tauri" class="star">
-            <span class="tag">4-Tauri</span>
+            <span style="margin-left:50px; margin-bottom: 50px;" class="tag">4-Tauri</span>
         </div>
     
         <div id="lambda-tauri-container" class="star-container">
@@ -117,7 +143,7 @@
     
         <div id="secunda-hyadum-container" class="star-container">
             <span id = "secunda-hyadum" class="star"></span>
-            <span class="tag">δ1 Tauri</span>
+            <span class="righttag">δ1 Tauri</span>
         </div>
     
         <div class="star-container" id="tau-tauri-container">
@@ -135,9 +161,41 @@
             <span class="tag">ξ Tauri</span>
         </div>
     
+        <div id="star-info-panel">
+            <button onclick="hideStarInfo()" class="invisible-button">
+                <i id="panel-close" class="fa-regular fa-circle-xmark fa-2xl" style="color: #ffffff;"></i>        
+            </button>
+            <img id="panel-img" src="https://www.star-facts.com/wp-content/uploads/2019/11/Taurus-constellation-map.webp" alt="">
+            <h2 id="star-name">Taurus Constellation</h2>
+            <p>Star-info</p>
+
+
+
+
+            <table id="star-table">
+                <tr>
+                  <th>Star Name</th>
+                  <th>Distance to Star (From Earth)</th>
+                  <th>Radius of Star</th>
+                  <th>Mass of Star</th>
+                  <th>Apparent Magnitude (V) - Visual</th>
+                  <th>Spectral Type</th>
+                  <th>Evolutionary Stage</th>
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>α Tauri</td> <!-- Star Name -->
+                  <td>65.3 light years</td> <!-- Distance to star -->
+                  <td>44.13 ± 0.84 R<sub>☉</sub></td> <!-- Radius of star -->
+                  <td>1.16 ± 0.07 M<sub>☉</sub></td><!-- Mass of star -->
+                  <td>0.75 – 0.95</td><!-- Apparent Magnitude (v) - Visual -->
+                  <td>K5+ III</td> <!-- Spectral Type -->
+                  <td>Orange Giant</td> <!-- Evolutionary Stage -->
+                  <td>6.4 billion years</td> <!-- Age -->
+                </tr>
     
-        <!-- <div id="zeta-to-alpha", class="constallation-line"> -->
-        
+              </table> 
+        </div>
               
     
     
@@ -161,7 +219,7 @@
     <table class="data-table">
         <tr>
           <th>Star Name</th>
-          <th>Distance to Sta (From Earth)r</th>
+          <th>Distance to Star (From Earth)</th>
           <th>Radius of Star</th>
           <th>Mass of Star</th>
           <th>Apparent Magnitude (V) - Visual</th>
@@ -303,9 +361,6 @@ In Greek mythology, Taurus is often associated with Zeus. It is said that once u
     <div class="csl-entry"><i>ξ Tauri (xi Tauri)—Star in Taurus | TheSkyLive.com</i>. (n.d.). Retrieved January 10, 2024, from <a href="https://theskylive.com/sky/stars/xi-tauri-star">https://theskylive.com/sky/stars/xi-tauri-star</a></div>
     <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=webpage&amp;rft.title=%CE%BE%20Tauri%20(xi%20Tauri)%20-%20Star%20in%20Taurus%20%7C%20TheSkyLive.com&amp;rft.description=%CE%BE%20Tauri%20is%20a%20star%20of%20magnitude%203.74%20in%20the%20constellation%20of%20Taurus.%20Find%20complete%20information%20about%20%CE%BE%20Tauri%20on%20TheSkyLive.com.&amp;rft.identifier=https%3A%2F%2Ftheskylive.com%2Fsky%2Fstars%2Fxi-tauri-star"></span>
   </div>
-
-
-
 </main>
 </body>
 </html>
