@@ -22,7 +22,6 @@ main {
 
 .star-container {
     position: absolute;
-    /* display: inline-block; */
 }
 .star{
     display: block;
@@ -48,7 +47,7 @@ main {
 
 }
 #aldebaran-container{
-    left: 43%;
+    left: 40%;
     top: 51.5%;
 }
 #chamukuy{
@@ -71,7 +70,36 @@ main {
     top: 22.2%;
 }
 
+#messier-45-container{
+    left: 70%;
+    top: 30%;
 
+}
+#messier-45{
+    height: 50px;
+    width: 50px;
+    border-style: outset;
+    border-color: grey;
+    border-width: 6px;
+}
+
+#crab-nebula-container{
+    left: 10%;
+    top: 38%;
+
+}
+#crab-nebula{
+    height: 30px;
+    width: 30px;
+    border-style: outset;
+    border-color: grey;
+    border-width: 6px;
+
+}
+#crab-nebula-tag{
+margin-bottom: 20px;
+
+}
 
 
 #four-tauri{
@@ -215,9 +243,10 @@ main {
     height: 60vw;
     width: 60vw;
     /* background-image: url(https://live.staticflickr.com/65535/49906614401_4bf9a28715_o.png); */
+    background-image: url(https://www.publicdomainpictures.net/pictures/10000/velka/starry-night-871287410454UmtH.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 150%;
 }     
 main{
     height: 100vh;
@@ -228,10 +257,7 @@ main{
     text-align: center;   
     font-size: 4rem;
     font-family: 'Roboto', sans-serif;
-    /* font-family: "Cooper Black", serif; */
-
-    
-}
+    }
 
 /* 
 @font-face {
@@ -305,13 +331,13 @@ button{
 #star-info-panel{
     z-index: 99;
     height: 100vh;
-    width: 40vw;
-    background-color: rgba(0, 255, 255, 0.644);
+    width: 60vw;
+    background-color: rgba(87, 87, 87, 0.977);
     position: fixed;
     left: 0;
     top: 0;
     border-radius: 5px;
-    transform:translateX(-100%);
+    transform:translateX(-70vw);
     transition: transform 0.5s ease;
     display: flex;
     justify-content: center;
@@ -330,14 +356,34 @@ button{
     position: absolute;
     margin-top: 100px;
     border-radius: 5px;
+    max-width: 35vw;
+    max-height: 40vh;
 
 }
 #star-name{
     font-size: 2rem;
 }
 #star-table{
+    font-size: 0.75rem;
     position: absolute;
-    top: 700px;
-    height: 100px;
-    max-width: 10vw;
+    top: 35vw;
+    text-align: center;
+    left: 5%;
 }
+#star-info{
+    position: absolute;
+    top: 30vw;
+    padding: 30px;
+
+}
+
+.subImg{
+    text-align: center;
+    border-radius: 10px;
+    max-width: 500px;
+}
+li{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
