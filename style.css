@@ -273,7 +273,6 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    overflow-wrap: anywhere;
   }
   
   td, th {
@@ -371,6 +370,7 @@ button{
     /* position: absolute; */
     top: 35vw;
     text-align: center;
+    overflow-wrap: anywhere;
     left: 0;}
 
 
