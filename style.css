@@ -272,7 +272,8 @@ main{
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 70%;
+    width: 100%;
+    overflow-wrap: anywhere;
   }
   
   td, th {
@@ -366,12 +367,11 @@ button{
 }
 #star-table{
     font-size: 0.75rem;
+    width: 80%;
     /* position: absolute; */
     top: 35vw;
     text-align: center;
-    left: 0;
-    margin-left: -10vw;
-}
+    left: 0;}
 
 
 #star-info{
