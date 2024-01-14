@@ -282,7 +282,7 @@ table {
   }
   
 
-.data-table{
+#data-table{
     margin: 0 auto;
     text-align: center;
 }
@@ -340,7 +340,9 @@ button{
     transform:translateX(-70vw);
     transition: transform 0.5s ease;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #star-info-panel.visible {
     transform: translateX(0%);
@@ -353,8 +355,7 @@ button{
 }
 #panel-img{
     justify-self: center;
-    position: absolute;
-    margin-top: 100px;
+    /* position: absolute; */
     border-radius: 5px;
     max-width: 35vw;
     max-height: 40vh;
@@ -365,13 +366,15 @@ button{
 }
 #star-table{
     font-size: 0.75rem;
-    position: absolute;
+    /* position: absolute; */
     top: 35vw;
     text-align: center;
     left: 5%;
 }
+
+
 #star-info{
-    position: absolute;
+    /* position: absolute; */
     top: 30vw;
     padding: 30px;
 
@@ -387,3 +390,30 @@ li{
     margin-bottom: 10px;
 }
 
+.interesting-facts-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.interesting-facts-wrapper div{
+margin-top: 30px;
+/* background-color: rgba(255, 255, 255, 0.696); */
+border-radius: 10px;
+/* border-color: white; */
+border: 3px solid white;
+
+}
+
+.facts img{
+    -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+    max-width: 20vw;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.facts li{
+    margin: auto auto;
+}
+.facts{
+    display: flex;
+}
