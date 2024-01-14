@@ -369,7 +369,8 @@ button{
     /* position: absolute; */
     top: 35vw;
     text-align: center;
-    left: 5%;
+    left: 0;
+    margin-left: -10vw;
 }
 
 
